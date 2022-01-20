@@ -15,9 +15,9 @@ class WelcomeScreen extends StatelessWidget {
       transitionDuration: const Duration(milliseconds: 1000),
       initialRoute: '/',
       getPages: [
-GetPage(name: '/', page: ()  =>const WelcomeScreen() ),
-        GetPage(name: '/LoginScreen', page: () => const LoginScreen() ),
-        GetPage(name: '/SignUpScreen', page: ()=> const SignUpScreen()),
+GetPage(name: '/', page: ()  => WelcomeScreen() ),
+         GetPage(name: '/LoginScreen', page: () =>  LoginScreen() ),
+        GetPage(name: '/SignUpScreen', page: ()=>  SignUpScreen()),
       ],
 
       home: Container(color: Colors.white,
@@ -29,14 +29,14 @@ GetPage(name: '/', page: ()  =>const WelcomeScreen() ),
               Image.asset('Assets/images/Taster PNG.png',alignment: Alignment.topCenter,),
               Padding(padding: const EdgeInsets.all(20),child:
               Text('Welcome To Admin Panel ',style: GoogleFonts.ubuntu(textStyle: const TextStyle(fontSize: 30,
-                color: Color(0xffd9005e,),
+                color: Colors.grey,fontWeight: FontWeight.bold,
               decoration: TextDecoration.none,
               ))),
               ),
               const SizedBox(height: 350,),
-         SignUpButton(inputText: 'LogIn', inOnPressed: (){Get.to(const LoginScreen());}),
+         SignUpButton(inputText: 'LogIn', inOnPressed: (){Get.to(LoginScreen());}),
    const SizedBox(height: 20,),
-              SignUpButton(inputText: '', inOnPressed: () { Get.to(const SignUpScreen()); },),
+              SignUpButton(inputText: 'Register', inOnPressed: () { Get.to( SignUpScreen()); },),
               const SizedBox(height: 20,)
 
             ],

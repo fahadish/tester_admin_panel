@@ -15,13 +15,14 @@ final VoidCallback? inOnPressed;
         width: 325,
         height: 40 ,
         child: ElevatedButton(
-          style: ElevatedButton.styleFrom(primary: Colors.transparent),
+          style: ElevatedButton.styleFrom(primary: Colors.transparent,elevation: 0,),
           onPressed: inOnPressed,child:  Text(inputText!,style: const TextStyle(fontSize: 14,letterSpacing: 3,fontWeight: FontWeight.w400),
         ),),
       ),
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(6),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
           gradient: const LinearGradient(
-              colors: [Colors.white,Colors.pink],
+              colors: [Colors.black,Colors.grey],
           )
       ),
 
