@@ -4,6 +4,7 @@ import 'package:tester_admin_panel/views/DashboardScreen/zoomdrower/dashboard_me
 import 'package:tester_admin_panel/views/DashboardScreen/zoomdrower/main_dashboard.dart';
 import 'package:tester_admin_panel/views/DeliveryAreaScreen/delovery_area_screen.dart';
 import 'package:tester_admin_panel/views/HomeScreen/home_screen.dart';
+import 'package:tester_admin_panel/views/LogoutScreen/logout_screen.dart';
 import 'package:tester_admin_panel/views/OrderScreen/order_screen.dart';
 import 'package:tester_admin_panel/views/ProfileScreen/ProfileScreen.dart';
 import 'package:tester_admin_panel/views/ViewListing/view_Listing_screen.dart';
@@ -46,6 +47,9 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
         return ViewListingScreen();
       case MenuItems.orders:
         return OrderScreen();
+      case MenuItems.logout:
+        return LogoutScreen();
+
     }
   }
 }

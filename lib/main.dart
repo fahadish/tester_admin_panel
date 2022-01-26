@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tester_admin_panel/controller/config/text_fields/my_input_theme.dart';
+import 'package:tester_admin_panel/views/LoginScreens/login_screen.dart';
 import 'package:tester_admin_panel/views/WelcomeScreen/welcome_screen.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         inputDecorationTheme: MyInputTheme().theme(),
         primarySwatch: Colors.blue,
       ),
-      home: WelcomeScreen()
+      home: LoginScreen()
     );
   }
 }

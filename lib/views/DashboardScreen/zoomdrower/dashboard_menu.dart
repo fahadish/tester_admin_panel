@@ -12,11 +12,12 @@ class MenuItem{
 }
 
 class MenuItems{
-  static const home = MenuItem('home',Icons.home);
+  static const home = MenuItem('Home',Icons.home);
   static const profile = MenuItem('Profile',Icons.face);
   static const deliveryArea = MenuItem('DeliveryArea',Icons.delivery_dining);
   static const viewListing = MenuItem('ViewListing',Icons.featured_play_list_outlined);
   static const orders = MenuItem('Orders',Icons.add_shopping_cart_rounded);
+  static const logout = MenuItem('LogOut',Icons.logout_rounded);
 
   static const all = <MenuItem>[
     home,
@@ -24,6 +25,8 @@ class MenuItems{
     deliveryArea,
     viewListing,
     orders,
+    logout
+
   ];
 }
 

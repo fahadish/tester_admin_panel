@@ -12,18 +12,14 @@ final VoidCallback? inOnPressed;
       margin: const EdgeInsets.only(left: 50,right: 50),
       alignment: Alignment.center,
       child: SizedBox(
-        width: 325,
-        height: 40 ,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(primary: Colors.transparent,elevation: 0,),
           onPressed: inOnPressed,child:  Text(inputText!,style: const TextStyle(fontSize: 14,letterSpacing: 3,fontWeight: FontWeight.w400),
         ),),
       ),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: const LinearGradient(
-              colors: [Colors.black,Colors.grey],
-          )
+      decoration: BoxDecoration(color: const Color(0xffD9005E),
+          borderRadius: BorderRadius.circular(50),
+
       ),
 
     );
