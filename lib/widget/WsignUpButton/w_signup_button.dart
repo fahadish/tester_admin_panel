@@ -4,12 +4,14 @@ final String? inputText;
 final VoidCallback? inOnPressed;
 
 
-  const SignUpButton({Key? key, required this.inputText,required this.inOnPressed}) : super(key: key);
+  const SignUpButton({Key? key, required this.inputText,required this.inOnPressed
+
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(left: 50,right: 50),
+    final size = MediaQuery.of(context).size;
+    return Container(height: size.height*0.05,width: size.width*0.5,
       alignment: Alignment.center,
       child: SizedBox(
         child: ElevatedButton(
@@ -18,7 +20,7 @@ final VoidCallback? inOnPressed;
         ),),
       ),
       decoration: BoxDecoration(color: const Color(0xffD9005E),
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(10),
 
       ),
 

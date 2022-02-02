@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 class HomeText extends StatelessWidget {
   final String? nText;
   const HomeText({required this.nText,
@@ -8,6 +7,6 @@ class HomeText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(nText!,style: TextStyle(fontFamily: 'Helvetica Neue',fontSize: 20,fontWeight: FontWeight.w900,color: Colors.grey,letterSpacing: 2),);
+    return Text(nText!,style: const TextStyle(fontFamily: 'Helvetica Neue',fontSize: 20,fontWeight: FontWeight.w900,color: Colors.grey,letterSpacing: 2),);
   }
 }
