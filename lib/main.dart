@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:tester_admin_panel/controller/config/text_fields/my_input_theme.dart';
+import 'package:tester_admin_panel/core_providers.dart';
 import 'package:tester_admin_panel/views/LoginScreens/login_screen.dart';
-import 'package:tester_admin_panel/views/WelcomeScreen/welcome_screen.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(create: (_)=>CoreProviders())
+    ],child: const MyApp(),),);
   }
 
 class MyApp extends StatelessWidget {
